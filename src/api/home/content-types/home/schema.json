@@ -1,0 +1,61 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "home",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HeroTitle": {
+      "type": "string"
+    },
+    "heroSubTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "das": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::da.da"
+    },
+    "PourquoiNous_title": {
+      "type": "string"
+    },
+    "PourquoiNous_description": {
+      "type": "text"
+    },
+    "projects": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::project.project"
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product"
+    },
+    "numbers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::number.number"
+    },
+    "partners": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
